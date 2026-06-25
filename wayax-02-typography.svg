@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1500" width="1200" height="1500" font-family="Inter, SF Pro Display, -apple-system, sans-serif">
+
+  <rect width="1200" height="1500" fill="#0A0E1A"/>
+
+  <!-- Header -->
+  <rect x="0" y="0" width="1200" height="80" fill="#0D1120"/>
+  <text x="48" y="30" font-size="11" fill="#4A6FA5" font-weight="600" letter-spacing="3">WAYAX DESIGN SYSTEM</text>
+  <text x="48" y="58" font-size="26" fill="#FFFFFF" font-weight="700">02 — Typography</text>
+  <text x="1152" y="58" font-size="13" fill="#4A6FA5" text-anchor="end">v2.0</text>
+
+  <!-- ═══ PRIMARY TYPEFACE ═══ -->
+  <text x="48" y="112" font-size="11" fill="#4A6FA5" font-weight="600" letter-spacing="2">PRIMARY TYPEFACE</text>
+  <line x1="48" y1="118" x2="230" y2="118" stroke="#1E2A45" stroke-width="1"/>
+
+  <text x="48" y="175" font-size="64" fill="#FFFFFF" font-weight="700" letter-spacing="-2">Inter</text>
+  <text x="48" y="205" font-size="15" fill="#4A6FA5">Primary UI typeface · Numbers, labels, data, body</text>
+  <text x="48" y="225" font-size="13" fill="#2D3F6A">Fallback: SF Pro Display, -apple-system, sans-serif</text>
+
+  <text x="600" y="175" font-size="64" fill="#2D8EFF" font-weight="700" letter-spacing="-2" font-style="italic">Aa Bb</text>
+  <text x="600" y="210" font-size="13" fill="#4A6FA5">Italic used for market commentary, quotes</text>
+
+  <!-- Alphabet + numerals -->
+  <rect x="48" y="244" width="1104" height="60" rx="8" fill="#0D1120"/>
+  <text x="72" y="283" font-size="20" fill="#94A3C0" letter-spacing="4">A B C D E F G H I J K L M N O P Q R S T U V W X Y Z</text>
+
+  <rect x="48" y="314" width="1104" height="60" rx="8" fill="#0D1120"/>
+  <text x="72" y="353" font-size="20" fill="#94A3C0" letter-spacing="4">a b c d e f g h i j k l m n o p q r s t u v w x y z</text>
+
+  <rect x="48" y="384" width="1104" height="60" rx="8" fill="#0D1120"/>
+  <text x="72" y="423" font-size="20" fill="#2D8EFF" letter-spacing="6" font-weight="600">0 1 2 3 4 5 6 7 8 9  +  −  ₹  %  .  ,</text>
+
+  <!-- ═══ TYPE SCALE ═══ -->
+  <text x="48" y="480" font-size="11" fill="#4A6FA5" font-weight="600" letter-spacing="2">TYPE SCALE</text>
+  <line x1="48" y1="486" x2="180" y2="486" stroke="#1E2A45" stroke-width="1"/>
+
+  <!-- Scale rows -->
+  <!-- Display -->
+  <rect x="48" y="498" width="1104" height="76" rx="6" fill="#0D1120"/>
+  <text x="72" y="537" font-size="40" fill="#FFFFFF" font-weight="700" letter-spacing="-1">WayaX Dashboard</text>
+  <text x="1130" y="522" font-size="10" fill="#4A6FA5" text-anchor="end">display / 40px / 700</text>
+  <text x="1130" y="538" font-size="10" fill="#2D3F6A" text-anchor="end">Page hero titles</text>
+  <text x="1130" y="554" font-size="10" fill="#2D3F6A" text-anchor="end">line-height: 1.1</text>
+  <text x="1130" y="570" font-size="10" fill="#2D3F6A" text-anchor="end">letter-spacing: -0.5px</text>
+
+  <!-- H1 -->
+  <rect x="48" y="584" width="1104" height="66" rx="6" fill="#0D1120"/>
+  <text x="72" y="624" font-size="32" fill="#FFFFFF" font-weight="700">Portfolio Overview</text>
+  <text x="1130" y="608" font-size="10" fill="#4A6FA5" text-anchor="end">h1 / 32px / 700</text>
+  <text x="1130" y="624" font-size="10" fill="#2D3F6A" text-anchor="end">Section headings</text>
+  <text x="1130" y="640" font-size="10" fill="#2D3F6A" text-anchor="end">line-height: 1.2</text>
+
+  <!-- H2 -->
+  <rect x="48" y="660" width="1104" height="58" rx="6" fill="#0D1120"/>
+  <text x="72" y="695" font-size="24" fill="#FFFFFF" font-weight="600">Market Analysis</text>
+  <text x="1130" y="678" font-size="10" fill="#4A6FA5" text-anchor="end">h2 / 24px / 600</text>
+  <text x="1130" y="694" font-size="10" fill="#2D3F6A" text-anchor="end">Card headings</text>
+  <text x="1130" y="710" font-size="10" fill="#2D3F6A" text-anchor="end">line-height: 1.3</text>
+
+  <!-- H3 -->
+  <rect x="48" y="728" width="1104" height="52" rx="6" fill="#0D1120"/>
+  <text x="72" y="759" font-size="18" fill="#FFFFFF" font-weight="600">NIFTY 50 Futures</text>
+  <text x="1130" y="744" font-size="10" fill="#4A6FA5" text-anchor="end">h3 / 18px / 600</text>
+  <text x="1130" y="760" font-size="10" fill="#2D3F6A" text-anchor="end">Widget titles</text>
+  <text x="1130" y="776" font-size="10" fill="#2D3F6A" text-anchor="end">line-height: 1.4</text>
+
+  <!-- Body Large -->
+  <rect x="48" y="790" width="1104" height="52" rx="6" fill="#0D1120"/>
+  <text x="72" y="821" font-size="16" fill="#94A3C0">Equity recommendations updated for today's session based on technical analysis</text>
+  <text x="1130" y="806" font-size="10" fill="#4A6FA5" text-anchor="end">body-lg / 16px / 400</text>
+  <text x="1130" y="822" font-size="10" fill="#2D3F6A" text-anchor="end">Primary body text</text>
+  <text x="1130" y="838" font-size="10" fill="#2D3F6A" text-anchor="end">line-height: 1.6</text>
+
+  <!-- Body -->
+  <rect x="48" y="852" width="1104" height="52" rx="6" fill="#0D1120"/>
+  <text x="72" y="883" font-size="14" fill="#94A3C0">Stop-loss triggered at ₹2,340 · Target achieved 94% · Risk-reward ratio 1:3</text>
+  <text x="1130" y="868" font-size="10" fill="#4A6FA5" text-anchor="end">body / 14px / 400</text>
+  <text x="1130" y="884" font-size="10" fill="#2D3F6A" text-anchor="end">Secondary body text</text>
+  <text x="1130" y="900" font-size="10" fill="#2D3F6A" text-anchor="end">line-height: 1.6</text>
+
+  <!-- Label -->
+  <rect x="48" y="914" width="1104" height="52" rx="6" fill="#0D1120"/>
+  <text x="72" y="940" font-size="12" fill="#4A6FA5" font-weight="600" letter-spacing="0.5">ENTRY PRICE · EXIT PRICE · P&amp;L · QUANTITY</text>
+  <text x="1130" y="926" font-size="10" fill="#4A6FA5" text-anchor="end">label / 12px / 600</text>
+  <text x="1130" y="942" font-size="10" fill="#2D3F6A" text-anchor="end">Table headers, meta</text>
+  <text x="1130" y="958" font-size="10" fill="#2D3F6A" text-anchor="end">letter-spacing: 0.5px</text>
+
+  <!-- Caption -->
+  <rect x="48" y="976" width="1104" height="44" rx="6" fill="#0D1120"/>
+  <text x="72" y="1001" font-size="11" fill="#2D3F6A">Last updated 14:32 IST · Data sourced from NSE · SEBI Registration No. INH000007669</text>
+  <text x="1130" y="990" font-size="10" fill="#4A6FA5" text-anchor="end">caption / 11px / 400</text>
+  <text x="1130" y="1006" font-size="10" fill="#2D3F6A" text-anchor="end">Footnotes, timestamps</text>
+
+  <!-- ═══ NUMBER STYLES ═══ -->
+  <text x="48" y="1060" font-size="11" fill="#4A6FA5" font-weight="600" letter-spacing="2">FINANCIAL NUMBER STYLES</text>
+  <line x1="48" y1="1066" x2="330" y2="1066" stroke="#1E2A45" stroke-width="1"/>
+
+  <!-- Price large -->
+  <rect x="48" y="1078" width="260" height="110" rx="8" fill="#0D1120"/>
+  <text x="68" y="1106" font-size="11" fill="#4A6FA5" font-weight="600" letter-spacing="1">LAST PRICE</text>
+  <text x="68" y="1148" font-size="36" fill="#FFFFFF" font-weight="700">₹2,847.50</text>
+  <text x="68" y="1174" font-size="12" fill="#00C07A">▲ +2.4%  +₹66.70</text>
+
+  <!-- P&L large green -->
+  <rect x="324" y="1078" width="260" height="110" rx="8" fill="#0D1120"/>
+  <text x="344" y="1106" font-size="11" fill="#4A6FA5" font-weight="600" letter-spacing="1">TOTAL P&amp;L</text>
+  <text x="344" y="1148" font-size="36" fill="#00C07A" font-weight="700">+₹18,420</text>
+  <text x="344" y="1174" font-size="12" fill="#4A6FA5">Today's gain · 3 trades</text>
+
+  <!-- P&L large red -->
+  <rect x="600" y="1078" width="260" height="110" rx="8" fill="#0D1120"/>
+  <text x="620" y="1106" font-size="11" fill="#4A6FA5" font-weight="600" letter-spacing="1">TOTAL P&amp;L</text>
+  <text x="620" y="1148" font-size="36" fill="#FF4757" font-weight="700">−₹4,230</text>
+  <text x="620" y="1174" font-size="12" fill="#4A6FA5">Today's loss · 1 trade</text>
+
+  <!-- Volume -->
+  <rect x="876" y="1078" width="276" height="110" rx="8" fill="#0D1120"/>
+  <text x="896" y="1106" font-size="11" fill="#4A6FA5" font-weight="600" letter-spacing="1">VOLUME</text>
+  <text x="896" y="1148" font-size="36" fill="#94A3C0" font-weight="600">12.4M</text>
+  <text x="896" y="1174" font-size="12" fill="#4A6FA5">Avg: 8.9M · 139% avg</text>
+
+  <!-- ═══ MONOSPACE / CODE ═══ -->
+  <text x="48" y="1226" font-size="11" fill="#4A6FA5" font-weight="600" letter-spacing="2">MONOSPACE — TICKER / CODE</text>
+  <line x1="48" y1="1232" x2="310" y2="1232" stroke="#1E2A45" stroke-width="1"/>
+
+  <rect x="48" y="1244" width="1104" height="56" rx="8" fill="#060912"/>
+  <text x="72" y="1278" font-size="20" fill="#2D8EFF" font-family="JetBrains Mono, Fira Code, Courier New, monospace" letter-spacing="2">RELIANCE  NIFTY50  BANKNIFTY  CRUDEOIL  GOLD</text>
+
+  <rect x="48" y="1310" width="1104" height="56" rx="8" fill="#060912"/>
+  <text x="72" y="1344" font-size="16" fill="#4A6FA5" font-family="JetBrains Mono, Fira Code, Courier New, monospace">BUY  2,847.50  SL: 2,800.00  TGT: 2,950.00  LOT: 50  MARGIN: ₹1,42,375</text>
+
+  <!-- ═══ FONT WEIGHTS ═══ -->
+  <text x="48" y="1404" font-size="11" fill="#4A6FA5" font-weight="600" letter-spacing="2">FONT WEIGHTS</text>
+  <line x1="48" y1="1410" x2="210" y2="1410" stroke="#1E2A45" stroke-width="1"/>
+
+  <text x="48"  y="1450" font-size="28" fill="#FFFFFF" font-weight="400">Regular 400</text>
+  <text x="280" y="1450" font-size="28" fill="#FFFFFF" font-weight="500">Medium 500</text>
+  <text x="540" y="1450" font-size="28" fill="#FFFFFF" font-weight="600">Semibold 600</text>
+  <text x="820" y="1450" font-size="28" fill="#FFFFFF" font-weight="700">Bold 700</text>
+
+  <text x="48"  y="1474" font-size="11" fill="#2D3F6A">Body text, descriptions</text>
+  <text x="280" y="1474" font-size="11" fill="#2D3F6A">Subheadings, emphasis</text>
+  <text x="540" y="1474" font-size="11" fill="#2D3F6A">UI labels, buttons, nav</text>
+  <text x="820" y="1474" font-size="11" fill="#2D3F6A">Headings, prices, CTA</text>
+
+  <!-- Footer -->
+  <line x1="48" y1="1480" x2="1152" y2="1480" stroke="#1E2A45" stroke-width="1"/>
+  <text x="48"  y="1494" font-size="11" fill="#2D3F6A">WayaX Design System · Waya Financial Technologies · Confidential</text>
+  <text x="1152" y="1494" font-size="11" fill="#2D3F6A" text-anchor="end">Sheet 2 / 6 — Typography</text>
+
+</svg>

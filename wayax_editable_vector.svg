@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1071" height="658" viewBox="0 0 1071 658">
+<defs>
+<radialGradient id="glow" cx="50%" cy="8%" r="45%">
+<stop offset="0%" stop-color="#2c3e50" stop-opacity="0.8"/>
+<stop offset="100%" stop-color="#000814" stop-opacity="0"/>
+</radialGradient>
+<linearGradient id="panel" x1="0" y1="0" x2="1" y2="0">
+<stop offset="0%" stop-color="#1b1f29"/>
+<stop offset="100%" stop-color="#151922"/>
+</linearGradient>
+</defs>
+<rect width="1071" height="658" fill="#020611"/>
+<rect width="1071" height="658" fill="url(#glow)"/>
+<g id="logo" transform="translate(535,86)">
+<rect x="-40" y="-40" width="80" height="80" rx="16" fill="#33424d" stroke="#667784"/>
+</g>
+<text x="535" y="172" text-anchor="middle" font-size="32" font-weight="700" fill="#f4f4f4">Welcome to WayaX,</text>
+<text x="680" y="172" font-size="32" font-weight="700" fill="#6488ff">hgf</text>
+<rect x="40" y="235" width="950" height="365" rx="30" fill="#070d18" stroke="#182335"/>
+<rect x="63" y="257" width="925" height="173" rx="25" fill="url(#panel)" stroke="#454b57" stroke-width="3"/>
+<rect x="65" y="454" width="922" height="119" rx="25" fill="#0a101b" stroke="#30384a"/>
+</svg>

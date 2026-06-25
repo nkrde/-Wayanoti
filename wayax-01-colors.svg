@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1400" width="1200" height="1400" font-family="Inter, SF Pro Display, -apple-system, sans-serif">
+
+  <!-- Background -->
+  <rect width="1200" height="1400" fill="#0A0E1A"/>
+
+  <!-- Header -->
+  <rect x="0" y="0" width="1200" height="80" fill="#0D1120"/>
+  <text x="48" y="30" font-size="11" fill="#4A6FA5" font-weight="600" letter-spacing="3" text-transform="uppercase">WAYAX DESIGN SYSTEM</text>
+  <text x="48" y="58" font-size="26" fill="#FFFFFF" font-weight="700">01 — Color Tokens</text>
+  <text x="1152" y="58" font-size="13" fill="#4A6FA5" text-anchor="end">v2.0</text>
+
+  <!-- ═══════════ SECTION: BRAND PRIMARY COLORS ═══════════ -->
+  <text x="48" y="112" font-size="11" fill="#4A6FA5" font-weight="600" letter-spacing="2">BRAND PRIMARY</text>
+  <line x1="48" y1="118" x2="240" y2="118" stroke="#1E2A45" stroke-width="1"/>
+
+  <!-- Blue Mana -->
+  <rect x="48" y="130" width="160" height="100" rx="8" fill="#1B4FD8"/>
+  <text x="56" y="200" font-size="11" fill="#FFFFFF" font-weight="600">Blue Mana</text>
+  <text x="56" y="216" font-size="10" fill="rgba(255,255,255,0.6)">#1B4FD8</text>
+  <text x="56" y="230" font-size="10" fill="rgba(255,255,255,0.6)">Primary CTA</text>
+
+  <!-- Blue Crystal -->
+  <rect x="224" y="130" width="160" height="100" rx="8" fill="#2D8EFF"/>
+  <text x="232" y="200" font-size="11" fill="#FFFFFF" font-weight="600">Blue Crystal</text>
+  <text x="232" y="216" font-size="10" fill="rgba(255,255,255,0.6)">#2D8EFF</text>
+  <text x="232" y="230" font-size="10" fill="rgba(255,255,255,0.6)">Accent / Links</text>
+
+  <!-- Illicit Purple -->
+  <rect x="400" y="130" width="160" height="100" rx="8" fill="#6C3FC5"/>
+  <text x="408" y="200" font-size="11" fill="#FFFFFF" font-weight="600">Illicit Purple</text>
+  <text x="408" y="216" font-size="10" fill="rgba(255,255,255,0.6)">#6C3FC5</text>
+  <text x="408" y="230" font-size="10" fill="rgba(255,255,255,0.6)">Premium / AI</text>
+
+  <!-- Salted Caramel -->
+  <rect x="576" y="130" width="160" height="100" rx="8" fill="#E8A042"/>
+  <text x="584" y="200" font-size="11" fill="#1A1A2E" font-weight="600">Salted Caramel</text>
+  <text x="584" y="216" font-size="10" fill="rgba(26,26,46,0.7)">#E8A042</text>
+  <text x="584" y="230" font-size="10" fill="rgba(26,26,46,0.7)">Alerts / Gold</text>
+
+  <!-- ═══════════ SECTION: SEMANTIC COLORS ═══════════ -->
+  <text x="48" y="266" font-size="11" fill="#4A6FA5" font-weight="600" letter-spacing="2">SEMANTIC</text>
+  <line x1="48" y1="272" x2="200" y2="272" stroke="#1E2A45" stroke-width="1"/>
+
+  <!-- Profit Green -->
+  <rect x="48" y="284" width="160" height="90" rx="8" fill="#00C07A"/>
+  <text x="56" y="344" font-size="11" fill="#FFFFFF" font-weight="600">Profit Green</text>
+  <text x="56" y="360" font-size="10" fill="rgba(255,255,255,0.65)">#00C07A</text>
+
+  <!-- Loss Red -->
+  <rect x="224" y="284" width="160" height="90" rx="8" fill="#FF4757"/>
+  <text x="232" y="344" font-size="11" fill="#FFFFFF" font-weight="600">Loss Red</text>
+  <text x="232" y="360" font-size="10" fill="rgba(255,255,255,0.65)">#FF4757</text>
+
+  <!-- Warning Amber -->
+  <rect x="400" y="284" width="160" height="90" rx="8" fill="#FFB800"/>
+  <text x="408" y="344" font-size="11" fill="#1A1A2E" font-weight="600">Warning Amber</text>
+  <text x="408" y="360" font-size="10" fill="rgba(26,26,46,0.7)">#FFB800</text>
+
+  <!-- Info Blue -->
+  <rect x="576" y="284" width="160" height="90" rx="8" fill="#0EA5E9"/>
+  <text x="584" y="344" font-size="11" fill="#FFFFFF" font-weight="600">Info Blue</text>
+  <text x="584" y="360" font-size="10" fill="rgba(255,255,255,0.65)">#0EA5E9</text>
+
+  <!-- Neutral Dark -->
+  <rect x="752" y="284" width="160" height="90" rx="8" fill="#1E2A45"/>
+  <text x="760" y="344" font-size="11" fill="#FFFFFF" font-weight="600">Neutral Dark</text>
+  <text x="760" y="360" font-size="10" fill="rgba(255,255,255,0.65)">#1E2A45</text>
+
+  <!-- ═══════════ SECTION: BLUE MANA SCALE ═══════════ -->
+  <text x="48" y="412" font-size="11" fill="#4A6FA5" font-weight="600" letter-spacing="2">BLUE MANA — FULL SCALE</text>
+  <line x1="48" y1="418" x2="330" y2="418" stroke="#1E2A45" stroke-width="1"/>
+
+  <!-- Blue scale swatches -->
+  <rect x="48"  y="430" width="100" height="60" rx="6" fill="#EBF2FF"/>
+  <text x="98"  y="462" font-size="10" fill="#1B4FD8" text-anchor="middle" font-weight="600">50</text>
+  <text x="98"  y="478" font-size="9"  fill="#1B4FD8" text-anchor="middle">#EBF2FF</text>
+
+  <rect x="160" y="430" width="100" height="60" rx="6" fill="#BFCFFF"/>
+  <text x="210" y="462" font-size="10" fill="#1B4FD8" text-anchor="middle" font-weight="600">100</text>
+  <text x="210" y="478" font-size="9"  fill="#1B4FD8" text-anchor="middle">#BFCFFF</text>
+
+  <rect x="272" y="430" width="100" height="60" rx="6" fill="#809EFF"/>
+  <text x="322" y="462" font-size="10" fill="#FFFFFF" text-anchor="middle" font-weight="600">200</text>
+  <text x="322" y="478" font-size="9"  fill="#FFFFFF" text-anchor="middle">#809EFF</text>
+
+  <rect x="384" y="430" width="100" height="60" rx="6" fill="#4369E8"/>
+  <text x="434" y="462" font-size="10" fill="#FFFFFF" text-anchor="middle" font-weight="600">400</text>
+  <text x="434" y="478" font-size="9"  fill="#FFFFFF" text-anchor="middle">#4369E8</text>
+
+  <rect x="496" y="430" width="100" height="60" rx="6" fill="#1B4FD8"/>
+  <text x="546" y="462" font-size="10" fill="#FFFFFF" text-anchor="middle" font-weight="600">600 ★</text>
+  <text x="546" y="478" font-size="9"  fill="#FFFFFF" text-anchor="middle">#1B4FD8</text>
+
+  <rect x="608" y="430" width="100" height="60" rx="6" fill="#0E308A"/>
+  <text x="658" y="462" font-size="10" fill="#FFFFFF" text-anchor="middle" font-weight="600">800</text>
+  <text x="658" y="478" font-size="9"  fill="#FFFFFF" text-anchor="middle">#0E308A</text>
+
+  <rect x="720" y="430" width="100" height="60" rx="6" fill="#061650"/>
+  <text x="770" y="462" font-size="10" fill="#FFFFFF" text-anchor="middle" font-weight="600">900</text>
+  <text x="770" y="478" font-size="9"  fill="#FFFFFF" text-anchor="middle">#061650</text>
+
+  <!-- ═══════════ SECTION: PURPLE SCALE ═══════════ -->
+  <text x="48" y="526" font-size="11" fill="#4A6FA5" font-weight="600" letter-spacing="2">ILLICIT PURPLE — FULL SCALE</text>
+  <line x1="48" y1="532" x2="340" y2="532" stroke="#1E2A45" stroke-width="1"/>
+
+  <rect x="48"  y="544" width="100" height="60" rx="6" fill="#EFE8FF"/>
+  <text x="98"  y="576" font-size="10" fill="#6C3FC5" text-anchor="middle" font-weight="600">50</text>
+  <text x="98"  y="592" font-size="9"  fill="#6C3FC5" text-anchor="middle">#EFE8FF</text>
+
+  <rect x="160" y="544" width="100" height="60" rx="6" fill="#CDB0FF"/>
+  <text x="210" y="576" font-size="10" fill="#6C3FC5" text-anchor="middle" font-weight="600">100</text>
+  <text x="210" y="592" font-size="9"  fill="#6C3FC5" text-anchor="middle">#CDB0FF</text>
+
+  <rect x="272" y="544" width="100" height="60" rx="6" fill="#A87FED"/>
+  <text x="322" y="576" font-size="10" fill="#FFFFFF" text-anchor="middle" font-weight="600">200</text>
+  <text x="322" y="592" font-size="9"  fill="#FFFFFF" text-anchor="middle">#A87FED</text>
+
+  <rect x="384" y="544" width="100" height="60" rx="6" fill="#8458D6"/>
+  <text x="434" y="576" font-size="10" fill="#FFFFFF" text-anchor="middle" font-weight="600">400</text>
+  <text x="434" y="592" font-size="9"  fill="#FFFFFF" text-anchor="middle">#8458D6</text>
+
+  <rect x="496" y="544" width="100" height="60" rx="6" fill="#6C3FC5"/>
+  <text x="546" y="576" font-size="10" fill="#FFFFFF" text-anchor="middle" font-weight="600">600 ★</text>
+  <text x="546" y="592" font-size="9"  fill="#FFFFFF" text-anchor="middle">#6C3FC5</text>
+
+  <rect x="608" y="544" width="100" height="60" rx="6" fill="#4A237D"/>
+  <text x="658" y="576" font-size="10" fill="#FFFFFF" text-anchor="middle" font-weight="600">800</text>
+  <text x="658" y="592" font-size="9"  fill="#FFFFFF" text-anchor="middle">#4A237D</text>
+
+  <rect x="720" y="544" width="100" height="60" rx="6" fill="#280C45"/>
+  <text x="770" y="576" font-size="10" fill="#FFFFFF" text-anchor="middle" font-weight="600">900</text>
+  <text x="770" y="592" font-size="9"  fill="#FFFFFF" text-anchor="middle">#280C45</text>
+
+  <!-- ═══════════ SECTION: BACKGROUND SYSTEM ═══════════ -->
+  <text x="48" y="642" font-size="11" fill="#4A6FA5" font-weight="600" letter-spacing="2">BACKGROUND SYSTEM — DARK THEME</text>
+  <line x1="48" y1="648" x2="380" y2="648" stroke="#1E2A45" stroke-width="1"/>
+
+  <rect x="48"  y="660" width="150" height="80" rx="8" fill="#060912" stroke="#1E2A45" stroke-width="1"/>
+  <text x="123" y="694" font-size="11" fill="#FFFFFF" text-anchor="middle" font-weight="600">bg-base</text>
+  <text x="123" y="710" font-size="10" fill="#4A6FA5" text-anchor="middle">#060912</text>
+  <text x="123" y="726" font-size="9"  fill="#4A6FA5" text-anchor="middle">App background</text>
+
+  <rect x="214" y="660" width="150" height="80" rx="8" fill="#0A0E1A" stroke="#1E2A45" stroke-width="1"/>
+  <text x="289" y="694" font-size="11" fill="#FFFFFF" text-anchor="middle" font-weight="600">bg-primary</text>
+  <text x="289" y="710" font-size="10" fill="#4A6FA5" text-anchor="middle">#0A0E1A</text>
+  <text x="289" y="726" font-size="9"  fill="#4A6FA5" text-anchor="middle">Page surface</text>
+
+  <rect x="380" y="660" width="150" height="80" rx="8" fill="#0D1120" stroke="#1E2A45" stroke-width="1"/>
+  <text x="455" y="694" font-size="11" fill="#FFFFFF" text-anchor="middle" font-weight="600">bg-secondary</text>
+  <text x="455" y="710" font-size="10" fill="#4A6FA5" text-anchor="middle">#0D1120</text>
+  <text x="455" y="726" font-size="9"  fill="#4A6FA5" text-anchor="middle">Cards / panels</text>
+
+  <rect x="546" y="660" width="150" height="80" rx="8" fill="#111827" stroke="#1E2A45" stroke-width="1"/>
+  <text x="621" y="694" font-size="11" fill="#FFFFFF" text-anchor="middle" font-weight="600">bg-elevated</text>
+  <text x="621" y="710" font-size="10" fill="#4A6FA5" text-anchor="middle">#111827</text>
+  <text x="621" y="726" font-size="9"  fill="#4A6FA5" text-anchor="middle">Modals / dropdowns</text>
+
+  <rect x="712" y="660" width="150" height="80" rx="8" fill="#1E2A45" stroke="#2D3F6A" stroke-width="1"/>
+  <text x="787" y="694" font-size="11" fill="#FFFFFF" text-anchor="middle" font-weight="600">bg-highlight</text>
+  <text x="787" y="710" font-size="10" fill="#6B8AC4" text-anchor="middle">#1E2A45</text>
+  <text x="787" y="726" font-size="9"  fill="#6B8AC4" text-anchor="middle">Selected / hover</text>
+
+  <!-- ═══════════ SECTION: TEXT COLORS ═══════════ -->
+  <text x="48" y="778" font-size="11" fill="#4A6FA5" font-weight="600" letter-spacing="2">TEXT HIERARCHY</text>
+  <line x1="48" y1="784" x2="220" y2="784" stroke="#1E2A45" stroke-width="1"/>
+
+  <rect x="48"  y="796" width="130" height="72" rx="8" fill="#0D1120"/>
+  <text x="113" y="827" font-size="18" fill="#FFFFFF" text-anchor="middle" font-weight="600">Aa</text>
+  <text x="113" y="845" font-size="10" fill="#4A6FA5" text-anchor="middle" font-weight="600">Primary</text>
+  <text x="113" y="859" font-size="9"  fill="#4A6FA5" text-anchor="middle">#FFFFFF</text>
+
+  <rect x="192" y="796" width="130" height="72" rx="8" fill="#0D1120"/>
+  <text x="257" y="827" font-size="18" fill="#94A3C0" text-anchor="middle" font-weight="600">Aa</text>
+  <text x="257" y="845" font-size="10" fill="#4A6FA5" text-anchor="middle" font-weight="600">Secondary</text>
+  <text x="257" y="859" font-size="9"  fill="#4A6FA5" text-anchor="middle">#94A3C0</text>
+
+  <rect x="336" y="796" width="130" height="72" rx="8" fill="#0D1120"/>
+  <text x="401" y="827" font-size="18" fill="#4A6FA5" text-anchor="middle" font-weight="600">Aa</text>
+  <text x="401" y="845" font-size="10" fill="#4A6FA5" text-anchor="middle" font-weight="600">Tertiary</text>
+  <text x="401" y="859" font-size="9"  fill="#4A6FA5" text-anchor="middle">#4A6FA5</text>
+
+  <rect x="480" y="796" width="130" height="72" rx="8" fill="#0D1120"/>
+  <text x="545" y="827" font-size="18" fill="#2D8EFF" text-anchor="middle" font-weight="600">Aa</text>
+  <text x="545" y="845" font-size="10" fill="#4A6FA5" text-anchor="middle" font-weight="600">Brand</text>
+  <text x="545" y="859" font-size="9"  fill="#4A6FA5" text-anchor="middle">#2D8EFF</text>
+
+  <rect x="624" y="796" width="130" height="72" rx="8" fill="#0D1120"/>
+  <text x="689" y="827" font-size="18" fill="#00C07A" text-anchor="middle" font-weight="600">Aa</text>
+  <text x="689" y="845" font-size="10" fill="#4A6FA5" text-anchor="middle" font-weight="600">Profit</text>
+  <text x="689" y="859" font-size="9"  fill="#4A6FA5" text-anchor="middle">#00C07A</text>
+
+  <rect x="768" y="796" width="130" height="72" rx="8" fill="#0D1120"/>
+  <text x="833" y="827" font-size="18" fill="#FF4757" text-anchor="middle" font-weight="600">Aa</text>
+  <text x="833" y="845" font-size="10" fill="#4A6FA5" text-anchor="middle" font-weight="600">Loss</text>
+  <text x="833" y="859" font-size="9"  fill="#4A6FA5" text-anchor="middle">#FF4757</text>
+
+  <!-- ═══════════ SECTION: BORDER + SURFACE ═══════════ -->
+  <text x="48" y="908" font-size="11" fill="#4A6FA5" font-weight="600" letter-spacing="2">BORDERS &amp; SURFACES</text>
+  <line x1="48" y1="914" x2="270" y2="914" stroke="#1E2A45" stroke-width="1"/>
+
+  <rect x="48"  y="926" width="170" height="56" rx="8" fill="#0D1120" stroke="#1E2A45" stroke-width="1"/>
+  <text x="133" y="951" font-size="11" fill="#FFFFFF" text-anchor="middle" font-weight="600">border-subtle</text>
+  <text x="133" y="967" font-size="10" fill="#4A6FA5" text-anchor="middle">#1E2A45  /  1px</text>
+
+  <rect x="234" y="926" width="170" height="56" rx="8" fill="#0D1120" stroke="#2D3F6A" stroke-width="1"/>
+  <text x="319" y="951" font-size="11" fill="#FFFFFF" text-anchor="middle" font-weight="600">border-default</text>
+  <text x="319" y="967" font-size="10" fill="#4A6FA5" text-anchor="middle">#2D3F6A  /  1px</text>
+
+  <rect x="420" y="926" width="170" height="56" rx="8" fill="#0D1120" stroke="#1B4FD8" stroke-width="1.5"/>
+  <text x="505" y="951" font-size="11" fill="#FFFFFF" text-anchor="middle" font-weight="600">border-focus</text>
+  <text x="505" y="967" font-size="10" fill="#4A6FA5" text-anchor="middle">#1B4FD8  /  1.5px</text>
+
+  <rect x="606" y="926" width="170" height="56" rx="8" fill="#0D1120" stroke="#00C07A" stroke-width="1"/>
+  <text x="691" y="951" font-size="11" fill="#FFFFFF" text-anchor="middle" font-weight="600">border-profit</text>
+  <text x="691" y="967" font-size="10" fill="#4A6FA5" text-anchor="middle">#00C07A  /  1px</text>
+
+  <rect x="792" y="926" width="170" height="56" rx="8" fill="#0D1120" stroke="#FF4757" stroke-width="1"/>
+  <text x="877" y="951" font-size="11" fill="#FFFFFF" text-anchor="middle" font-weight="600">border-loss</text>
+  <text x="877" y="967" font-size="10" fill="#4A6FA5" text-anchor="middle">#FF4757  /  1px</text>
+
+  <!-- ═══════════ SECTION: GLASS / GLASSMORPHISM ═══════════ -->
+  <text x="48" y="1022" font-size="11" fill="#4A6FA5" font-weight="600" letter-spacing="2">GLASS SURFACES</text>
+  <line x1="48" y1="1028" x2="220" y2="1028" stroke="#1E2A45" stroke-width="1"/>
+
+  <rect x="48" y="1040" width="250" height="100" rx="12" fill="#1B4FD8" fill-opacity="0.08" stroke="#2D8EFF" stroke-opacity="0.2" stroke-width="1"/>
+  <text x="173" y="1072" font-size="11" fill="#FFFFFF" text-anchor="middle" font-weight="600">glass-blue</text>
+  <text x="173" y="1090" font-size="10" fill="#4A6FA5" text-anchor="middle">fill: #1B4FD8 / 8%</text>
+  <text x="173" y="1106" font-size="10" fill="#4A6FA5" text-anchor="middle">stroke: #2D8EFF / 20%</text>
+  <text x="173" y="1122" font-size="9"  fill="#4A6FA5" text-anchor="middle">Cards, panels, overlays</text>
+
+  <rect x="320" y="1040" width="250" height="100" rx="12" fill="#6C3FC5" fill-opacity="0.1" stroke="#A87FED" stroke-opacity="0.25" stroke-width="1"/>
+  <text x="445" y="1072" font-size="11" fill="#FFFFFF" text-anchor="middle" font-weight="600">glass-purple</text>
+  <text x="445" y="1090" font-size="10" fill="#4A6FA5" text-anchor="middle">fill: #6C3FC5 / 10%</text>
+  <text x="445" y="1106" font-size="10" fill="#4A6FA5" text-anchor="middle">stroke: #A87FED / 25%</text>
+  <text x="445" y="1122" font-size="9"  fill="#4A6FA5" text-anchor="middle">AI / Premium features</text>
+
+  <rect x="592" y="1040" width="250" height="100" rx="12" fill="#00C07A" fill-opacity="0.08" stroke="#00C07A" stroke-opacity="0.3" stroke-width="1"/>
+  <text x="717" y="1072" font-size="11" fill="#FFFFFF" text-anchor="middle" font-weight="600">glass-profit</text>
+  <text x="717" y="1090" font-size="10" fill="#4A6FA5" text-anchor="middle">fill: #00C07A / 8%</text>
+  <text x="717" y="1106" font-size="10" fill="#4A6FA5" text-anchor="middle">stroke: #00C07A / 30%</text>
+  <text x="717" y="1122" font-size="9"  fill="#4A6FA5" text-anchor="middle">Profit states, gains</text>
+
+  <!-- ═══════════ SECTION: GRADIENT TOKENS ═══════════ -->
+  <text x="48" y="1182" font-size="11" fill="#4A6FA5" font-weight="600" letter-spacing="2">GRADIENT TOKENS</text>
+  <line x1="48" y1="1188" x2="230" y2="1188" stroke="#1E2A45" stroke-width="1"/>
+
+  <defs>
+    <linearGradient id="grad-brand" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#1B4FD8"/>
+      <stop offset="100%" stop-color="#2D8EFF"/>
+    </linearGradient>
+    <linearGradient id="grad-premium" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#1B4FD8"/>
+      <stop offset="100%" stop-color="#6C3FC5"/>
+    </linearGradient>
+    <linearGradient id="grad-profit" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0EA5E9"/>
+      <stop offset="100%" stop-color="#00C07A"/>
+    </linearGradient>
+    <linearGradient id="grad-alert" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#E8A042"/>
+      <stop offset="100%" stop-color="#FF4757"/>
+    </linearGradient>
+  </defs>
+
+  <rect x="48"  y="1200" width="250" height="44" rx="8" fill="url(#grad-brand)"/>
+  <text x="173" y="1227" font-size="11" fill="#FFFFFF" text-anchor="middle" font-weight="600">gradient-brand</text>
+
+  <rect x="316" y="1200" width="250" height="44" rx="8" fill="url(#grad-premium)"/>
+  <text x="441" y="1227" font-size="11" fill="#FFFFFF" text-anchor="middle" font-weight="600">gradient-premium</text>
+
+  <rect x="48"  y="1256" width="250" height="44" rx="8" fill="url(#grad-profit)"/>
+  <text x="173" y="1283" font-size="11" fill="#FFFFFF" text-anchor="middle" font-weight="600">gradient-profit</text>
+
+  <rect x="316" y="1256" width="250" height="44" rx="8" fill="url(#grad-alert)"/>
+  <text x="441" y="1283" font-size="11" fill="#FFFFFF" text-anchor="middle" font-weight="600">gradient-alert</text>
+
+  <!-- Footer -->
+  <line x1="48" y1="1370" x2="1152" y2="1370" stroke="#1E2A45" stroke-width="1"/>
+  <text x="48"  y="1390" font-size="11" fill="#2D3F6A">WayaX Design System · Waya Financial Technologies · Confidential</text>
+  <text x="1152" y="1390" font-size="11" fill="#2D3F6A" text-anchor="end">Sheet 1 / 6 — Color Tokens</text>
+
+</svg>

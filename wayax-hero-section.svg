@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 380" width="1080" height="380" font-family="Inter, -apple-system, BlinkMacSystemFont, sans-serif">
+
+  <defs>
+
+    <!-- Page background: very dark navy/black -->
+    <radialGradient id="page-bg" cx="50%" cy="0%" r="80%">
+      <stop offset="0%"   stop-color="#12102a"/>
+      <stop offset="100%" stop-color="#08080f"/>
+    </radialGradient>
+
+    <!-- Subtle purple bloom behind heading -->
+    <radialGradient id="title-bloom" cx="50%" cy="50%" r="50%">
+      <stop offset="0%"   stop-color="#4f2d8a" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#08080f" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Search bar gradient border: left=blue, right=pink/purple -->
+    <linearGradient id="search-border-grad" x1="0%" y1="50%" x2="100%" y2="50%">
+      <stop offset="0%"   stop-color="#5b5bff"/>
+      <stop offset="55%"  stop-color="#7c3aed"/>
+      <stop offset="100%" stop-color="#d946a8"/>
+    </linearGradient>
+
+    <!-- Submit button gradient: indigo → purple -->
+    <linearGradient id="submit-btn-grad" x1="135deg" x2="0%" y1="0%" y2="100%">
+      <stop offset="0%"   stop-color="#4f46e5"/>
+      <stop offset="100%" stop-color="#7c3aed"/>
+    </linearGradient>
+
+    <!-- "King" text gradient: blue → purple -->
+    <linearGradient id="king-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%"   stop-color="#818cf8"/>
+      <stop offset="100%" stop-color="#c084fc"/>
+    </linearGradient>
+
+    <!-- Dot grid -->
+    <pattern id="dots" x="0" y="0" width="30" height="30" patternUnits="userSpaceOnUse">
+      <circle cx="1" cy="1" r="0.7" fill="#ffffff" fill-opacity="0.04"/>
+    </pattern>
+
+  </defs>
+
+  <!-- ── BACKGROUND ── -->
+  <rect width="1080" height="380" fill="url(#page-bg)"/>
+  <rect width="1080" height="380" fill="url(#dots)"/>
+  <!-- purple bloom centred behind heading -->
+  <ellipse cx="540" cy="68" rx="420" ry="140" fill="url(#title-bloom)"/>
+
+  <!-- ── HEADLINE ── -->
+  <!-- "Welcome to WayaX," white, bold -->
+  <text
+    x="540" y="72"
+    font-size="52"
+    font-weight="800"
+    fill="#ffffff"
+    text-anchor="middle"
+    letter-spacing="-1"
+    dominant-baseline="auto"
+  >Welcome to WayaX, <tspan fill="url(#king-grad)">King</tspan></text>
+
+  <!-- ── SEARCH BAR ── -->
+
+  <!-- Gradient border rect (outer) -->
+  <rect x="44" y="96" width="992" height="58" rx="29" fill="url(#search-border-grad)"/>
+  <!-- Dark inner fill (1.5px inset) -->
+  <rect x="45.5" y="97.5" width="989" height="55" rx="28" fill="#0c0c1e"/>
+
+  <!-- Placeholder "Ask W" -->
+  <text x="72" y="131" font-size="16" fill="#3d3d5c" font-weight="400">Ask W</text>
+
+  <!-- Mic icon -->
+  <g transform="translate(932, 125)">
+    <!-- mic capsule -->
+    <rect x="-5.5" y="-12" width="11" height="16" rx="5.5" fill="none" stroke="#5a5a7a" stroke-width="1.6"/>
+    <!-- arc base -->
+    <path d="M-10 6 Q-10 15 0 15 Q10 15 10 6" fill="none" stroke="#5a5a7a" stroke-width="1.6" stroke-linecap="round"/>
+    <!-- stem -->
+    <line x1="0" y1="15" x2="0" y2="20" stroke="#5a5a7a" stroke-width="1.6" stroke-linecap="round"/>
+    <!-- base bar -->
+    <line x1="-5" y1="20" x2="5" y2="20" stroke="#5a5a7a" stroke-width="1.6" stroke-linecap="round"/>
+  </g>
+
+  <!-- Submit button (gradient rounded square) -->
+  <rect x="962" y="104" width="62" height="42" rx="21" fill="url(#submit-btn-grad)"/>
+  <!-- Arrow-up icon -->
+  <g transform="translate(993, 125)">
+    <line x1="0" y1="9"  x2="0"  y2="-8" stroke="#ffffff" stroke-width="2.2" stroke-linecap="round"/>
+    <polyline points="-6,0 0,-8 6,0" fill="none" stroke="#ffffff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <!-- ── EXPLORE CHAT PRESETS DIVIDER ── -->
+  <line x1="44"  y1="194" x2="325" y2="194" stroke="#22223a" stroke-width="1"/>
+  <text x="540"  y="198" font-size="10.5" fill="#3d3d5c" font-weight="600" text-anchor="middle" letter-spacing="2.8">EXPLORE CHAT PRESETS</text>
+  <line x1="755" y1="194" x2="1036" y2="194" stroke="#22223a" stroke-width="1"/>
+
+
+  <!-- ── PRESET PILLS ── -->
+  <!-- gap layout: 5 pills, each ~172px wide, gap 14px, total ~(5×172)+(4×14)=916, start x=82 -->
+
+  <!-- ① Stocks to Buy -->
+  <rect x="62" y="212" width="177" height="38" rx="19" fill="#111128" stroke="#252540" stroke-width="1"/>
+  <!-- trend-up arrow icon -->
+  <g transform="translate(83,231)">
+    <polyline points="0,8 6,2 11,6 17,-2" fill="none" stroke="#94a3b8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <polyline points="13,-2 17,-2 17,2"   fill="none" stroke="#94a3b8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <text x="107" y="236" font-size="13" fill="#cbd5e1" font-weight="500">Stocks to Buy</text>
+  <!-- chevron -->
+  <polyline points="223,227 228,231 223,235" fill="none" stroke="#3d3d5c" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- ② Short selling -->
+  <rect x="253" y="212" width="162" height="38" rx="19" fill="#111128" stroke="#252540" stroke-width="1"/>
+  <!-- warning triangle -->
+  <g transform="translate(272,223)">
+    <polygon points="9,0 18,16 0,16" fill="none" stroke="#94a3b8" stroke-width="1.4" stroke-linejoin="round"/>
+    <text x="9" y="13" font-size="9" fill="#94a3b8" text-anchor="middle" font-weight="700">!</text>
+  </g>
+  <text x="298" y="236" font-size="13" fill="#cbd5e1" font-weight="500">Short selling</text>
+  <polyline points="396,227 401,231 396,235" fill="none" stroke="#3d3d5c" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- ③ Long term picks -->
+  <rect x="429" y="212" width="191" height="38" rx="19" fill="#111128" stroke="#252540" stroke-width="1"/>
+  <!-- sparkle / asterisk icon -->
+  <g transform="translate(449,231)">
+    <line x1="0" y1="-8" x2="0"  y2="8"  stroke="#94a3b8" stroke-width="1.5" stroke-linecap="round"/>
+    <line x1="-7" y1="-4" x2="7" y2="4"  stroke="#94a3b8" stroke-width="1.5" stroke-linecap="round"/>
+    <line x1="-7" y1="4"  x2="7" y2="-4" stroke="#94a3b8" stroke-width="1.5" stroke-linecap="round"/>
+    <circle cx="0" cy="0" r="2.5" fill="#94a3b8"/>
+  </g>
+  <text x="469" y="236" font-size="13" fill="#cbd5e1" font-weight="500">Long term picks</text>
+  <polyline points="601,227 606,231 601,235" fill="none" stroke="#3d3d5c" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- ④ Track record -->
+  <rect x="634" y="212" width="166" height="38" rx="19" fill="#111128" stroke="#252540" stroke-width="1"/>
+  <!-- magnifying glass -->
+  <g transform="translate(653,231)">
+    <circle cx="0" cy="0" r="7" fill="none" stroke="#94a3b8" stroke-width="1.5"/>
+    <line x1="5" y1="5" x2="10" y2="10" stroke="#94a3b8" stroke-width="1.5" stroke-linecap="round"/>
+  </g>
+  <text x="671" y="236" font-size="13" fill="#cbd5e1" font-weight="500">Track record</text>
+  <polyline points="780,227 785,231 780,235" fill="none" stroke="#3d3d5c" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- ⑤ About Waya -->
+  <rect x="814" y="212" width="154" height="38" rx="19" fill="#111128" stroke="#252540" stroke-width="1"/>
+  <!-- WayaX mini logo -->
+  <g transform="translate(833,231)">
+    <circle cx="0" cy="0" r="7" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+    <polygon points="-4,4 0,-5 4,4 0,1" fill="#94a3b8" fill-opacity="0.9"/>
+  </g>
+  <text x="848" y="236" font-size="13" fill="#cbd5e1" font-weight="500">About Waya</text>
+  <polyline points="947,227 952,231 947,235" fill="none" stroke="#3d3d5c" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+
+</svg>

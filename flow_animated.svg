@@ -1,0 +1,350 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2560 1440" width="2560" height="1440">
+  <defs>
+    <!-- Glow Filters -->
+    <filter id="glow-blue" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="0" stdDeviation="15" flood-color="#00d2ff" flood-opacity="0.8"/>
+    </filter>
+    <filter id="glow-orange" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="0" stdDeviation="15" flood-color="#ff9f43" flood-opacity="0.8"/>
+    </filter>
+    <filter id="glow-purple" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="0" stdDeviation="15" flood-color="#c56cf0" flood-opacity="0.8"/>
+    </filter>
+    <filter id="glow-red" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="0" stdDeviation="15" flood-color="#ff4757" flood-opacity="0.8"/>
+    </filter>
+    <filter id="glow-text" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="0" stdDeviation="5" flood-color="#ffffff" flood-opacity="0.5"/>
+    </filter>
+
+    <!-- Gradients for Cards -->
+    <linearGradient id="grad-blue" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#051329" />
+      <stop offset="100%" stop-color="#0b2447" />
+    </linearGradient>
+    <linearGradient id="grad-orange" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1c1006" />
+      <stop offset="100%" stop-color="#3c200a" />
+    </linearGradient>
+    <linearGradient id="grad-red" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1f0709" />
+      <stop offset="100%" stop-color="#3a0d13" />
+    </linearGradient>
+    <linearGradient id="grad-purple" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#140620" />
+      <stop offset="100%" stop-color="#320e4b" />
+    </linearGradient>
+    <linearGradient id="grad-dark-red" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#080203" />
+      <stop offset="100%" stop-color="#1a060a" />
+    </linearGradient>
+    <linearGradient id="grad-glass" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="rgba(30, 30, 35, 0.75)" />
+      <stop offset="100%" stop-color="rgba(15, 15, 18, 0.6)" />
+    </linearGradient>
+    <linearGradient id="grad-spotlight" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="rgba(0, 102, 255, 0.3)" />
+      <stop offset="100%" stop-color="rgba(0, 210, 255, 0.02)" />
+    </linearGradient>
+  </defs>
+
+  <style>
+    @keyframes flow-right {
+      to { stroke-dashoffset: -40; }
+    }
+    @keyframes flow-left {
+      to { stroke-dashoffset: 40; }
+    }
+    @keyframes pulse-glow {
+      0% { opacity: 0.5; }
+      50% { opacity: 0.9; }
+      100% { opacity: 0.5; }
+    }
+    @keyframes float-eye {
+      0% { transform: translateY(0px); }
+      50% { transform: translateY(-6px); }
+      100% { transform: translateY(0px); }
+    }
+
+    .bg { fill: #030712; }
+    
+    /* Flow paths with animations */
+    .path-blue {
+      stroke: #00d2ff;
+      stroke-width: 4.5;
+      stroke-dasharray: 12, 12;
+      stroke-linecap: round;
+      animation: flow-right 2s linear infinite;
+    }
+    .path-orange {
+      stroke: #ff9f43;
+      stroke-width: 4.5;
+      stroke-dasharray: 12, 12;
+      stroke-linecap: round;
+      animation: flow-left 2s linear infinite;
+    }
+    .path-pink {
+      stroke: #c56cf0;
+      stroke-width: 4;
+      stroke-dasharray: 12, 12;
+      stroke-linecap: round;
+      animation: flow-left 2.5s linear infinite;
+    }
+    .path-orange-down {
+      stroke: #ff7f50;
+      stroke-width: 4.5;
+      stroke-dasharray: 12, 12;
+      stroke-linecap: round;
+      animation: flow-right 2s linear infinite;
+    }
+    .path-orange-up {
+      stroke: #ff4757;
+      stroke-width: 4.5;
+      stroke-dasharray: 12, 12;
+      stroke-linecap: round;
+      animation: flow-left 2s linear infinite;
+    }
+    .path-blue-up {
+      stroke: #00d2ff;
+      stroke-width: 4.5;
+      stroke-dasharray: 12, 12;
+      stroke-linecap: round;
+      animation: flow-left 2s linear infinite;
+    }
+    .dashed-border-box {
+      stroke: #ff7f50;
+      stroke-width: 2.5;
+      stroke-dasharray: 10, 10;
+      animation: flow-right 12s linear infinite;
+    }
+    .glow-pulse {
+      animation: pulse-glow 2.5s ease-in-out infinite;
+    }
+    .eye-float {
+      animation: float-eye 4s ease-in-out infinite;
+    }
+    
+    /* Font styles */
+    .card-title {
+      font-family: 'Outfit', 'Inter', -apple-system, sans-serif;
+      font-weight: 700;
+      fill: #ffffff;
+    }
+    .card-text {
+      font-family: 'Inter', -apple-system, sans-serif;
+      font-weight: 500;
+      fill: #e2e8f0;
+    }
+    .card-subtext {
+      font-family: 'Inter', -apple-system, sans-serif;
+      font-weight: 600;
+      fill: #ff7675;
+    }
+  </style>
+
+  <!-- Background -->
+  <rect class="bg" width="2560" height="1440" />
+
+  <!-- Grid Overlay for tech aesthetic -->
+  <g opacity="0.05">
+    <path d="M 0,160 L 2560,160 M 0,320 L 2560,320 M 0,480 L 2560,480 M 0,640 L 2560,640 M 0,800 L 2560,800 M 0,960 L 2560,960 M 0,1120 L 2560,1120 M 0,1280 L 2560,1280" stroke="#ffffff" stroke-width="1"/>
+    <path d="M 320,0 L 320,1440 M 640,0 L 640,1440 M 960,0 L 960,1440 M 1280,0 L 1280,1440 M 1600,0 L 1600,1440 M 1920,0 L 1920,1440 M 2240,0 L 2240,1440" stroke="#ffffff" stroke-width="1"/>
+  </g>
+
+  <!-- Spotlight cone from Stock Market -->
+  <polygon points="1744,475 2024,475 1944,664 1824,664" fill="url(#grad-spotlight)" class="glow-pulse" />
+
+  <!-- DOTTED BOX around bottom group -->
+  <rect x="770" y="928" width="1290" height="328" rx="40" fill="none" class="dashed-border-box" />
+
+  <!-- FLOW PATHS -->
+  <!-- Top Blue Path: Waya User Base -> Stock Market -->
+  <path d="M 775,250 L 870,250 M 950,250 L 1150,250 M 1490,250 L 1744,250" fill="none" class="path-blue" />
+  <!-- Blue path arrow -->
+  <polygon points="1734,242 1748,250 1734,258" fill="#00d2ff" />
+
+  <!-- Top Orange Path: Stock Market -> Waya User Base -->
+  <path d="M 1744,375 L 775,375" fill="none" class="path-orange" />
+  <!-- Orange path arrow -->
+  <polygon points="785,367 771,375 785,383" fill="#ff9f43" />
+
+  <!-- Bottom Orange Path: Eye 2 -> Waya App bottom -->
+  <path d="M 1884,744 L 1884,1220 L 635,1220 L 635,1203" fill="none" class="path-orange-down" />
+  <!-- Orange path arrow at Waya App bottom -->
+  <polygon points="627,1209 635,1199 643,1209" fill="#ff7f50" />
+
+  <!-- Vertical Left Path: Waya App -> Notification -->
+  <path d="M 635,1047 L 635,820" fill="none" class="path-orange-up" />
+  <polygon points="627,830 635,818 643,830" fill="#ff4757" />
+
+  <!-- Vertical Left Path: Notification -> Waya User Base -->
+  <path d="M 635,664 L 635,474" fill="none" class="path-blue-up" />
+  <polygon points="627,484 635,470 643,484" fill="#00d2ff" />
+
+  <!-- Bottom Pink Path: Continues Scanning -> Waya + Analyst -->
+  <path d="M 1610,1092 L 1548,1092" fill="none" class="path-pink" />
+  <polygon points="1558,1084 1546,1092 1558,1100" fill="#c56cf0" />
+
+  <!-- Bottom Pink Path: Waya + Analyst -> Trade Info Card -->
+  <path d="M 1300,1092 L 1230,1092" fill="none" class="path-pink" />
+  <polygon points="1240,1084 1228,1092 1240,1100" fill="#c56cf0" />
+
+
+  <!-- JUNCTION DOTS IN THE BOTTOM CHAIN -->
+  <!-- Pink circle 1 -->
+  <g transform="translate(1265, 1092)">
+    <circle cx="0" cy="0" r="14" fill="#020611" stroke="#c56cf0" stroke-width="2.5" />
+    <circle cx="0" cy="0" r="5" fill="#c56cf0" class="glow-pulse" />
+  </g>
+  <!-- Pink circle 2 -->
+  <g transform="translate(1579, 1092)">
+    <circle cx="0" cy="0" r="14" fill="#020611" stroke="#c56cf0" stroke-width="2.5" />
+    <circle cx="0" cy="0" r="5" fill="#c56cf0" class="glow-pulse" />
+  </g>
+
+
+  <!-- CARDS SECTION -->
+
+  <!-- 1. WAYA USER BASE (Top-Left) -->
+  <g transform="translate(495, 195)">
+    <rect x="0" y="0" width="280" height="280" rx="40" fill="url(#grad-blue)" stroke="#00d2ff" stroke-width="2" filter="url(#glow-blue)" />
+    <text x="140" y="105" class="card-title" font-size="28" text-anchor="middle">WAYA</text>
+    <text x="140" y="145" class="card-title" font-size="28" text-anchor="middle">USER</text>
+    <text x="140" y="185" class="card-title" font-size="28" text-anchor="middle">BASE</text>
+  </g>
+
+  <!-- 2. STOCK MARKET (Top-Right) -->
+  <g transform="translate(1744, 195)">
+    <rect x="0" y="0" width="280" height="280" rx="40" fill="url(#grad-orange)" stroke="#ff9f43" stroke-width="2" filter="url(#glow-orange)" />
+    <text x="140" y="125" class="card-title" font-size="30" text-anchor="middle">STOCK</text>
+    <text x="140" y="170" class="card-title" font-size="30" text-anchor="middle">MARKET</text>
+  </g>
+
+  <!-- 3. Transaction Pill (Top-Center) -->
+  <g transform="translate(1150, 200)">
+    <rect x="0" y="0" width="340" height="80" rx="40" fill="url(#grad-glass)" stroke="rgba(255, 255, 255, 0.15)" stroke-width="1.5" />
+    <text x="170" y="38" class="card-title" font-size="13" text-anchor="middle">Transaction According to</text>
+    <text x="170" y="58" class="card-text" font-size="13" fill="#b0b0b0" text-anchor="middle">the Alert from Waya</text>
+  </g>
+
+  <!-- 4. Notification Pill (Left-Middle) -->
+  <g transform="translate(495, 664)">
+    <rect x="0" y="0" width="280" height="156" rx="55" fill="url(#grad-red)" stroke="#ff4757" stroke-width="2" filter="url(#glow-red)" />
+    <!-- Bell Icon Circle -->
+    <circle cx="70" cy="78" r="40" fill="#020611" stroke="#ff4757" stroke-width="1.5" />
+    <!-- Bell Path inside Circle -->
+    <g transform="translate(50, 58) scale(1.6)">
+      <path d="M12 2C9.24 2 7 4.24 7 7v7l-2 2v1h14v-1l-2-2V7c0-2.76-2.24-5-5-5zm0-2a1 1 0 0 1 1 1v1a1 1 0 0 1-2 0V1a1 1 0 0 1 1-1z" fill="#ffffff" />
+      <path d="M9 19a3 3 0 0 0 6 0H9z" fill="#ffffff" />
+    </g>
+    <!-- Text right side -->
+    <text x="180" y="52" class="card-title" font-size="16" text-anchor="middle">Notification</text>
+    <text x="180" y="78" class="card-subtext" font-size="11" text-anchor="middle">ALERT TO TAKE ACTION</text>
+    <text x="180" y="96" class="card-subtext" font-size="11" text-anchor="middle">OR</text>
+    <text x="180" y="114" class="card-subtext" font-size="11" text-anchor="middle">INFORMATION</text>
+  </g>
+
+  <!-- 5. Waya App Pill (Left-Bottom) -->
+  <g transform="translate(495, 1047)">
+    <rect x="0" y="0" width="280" height="156" rx="55" fill="url(#grad-app)" stroke="#ff6b81" stroke-width="2" filter="url(#glow-red)" />
+    <!-- Mobile Icon Circle -->
+    <circle cx="70" cy="78" r="40" fill="#020611" stroke="#ff6b81" stroke-width="1.5" />
+    <!-- Mobile Path inside Circle -->
+    <g transform="translate(58, 58) scale(1.6)">
+      <rect x="4" y="2" width="10" height="18" rx="2" fill="none" stroke="#ffffff" stroke-width="1.5" />
+      <circle cx="9" cy="17" r="1" fill="#ffffff" />
+      <line x1="8" y1="4" x2="10" y2="4" stroke="#ffffff" stroke-width="1" stroke-linecap="round" />
+    </g>
+    <!-- Text right side -->
+    <text x="180" y="86" class="card-title" font-size="20" text-anchor="middle">Waya App</text>
+  </g>
+
+
+  <!-- BOTTOM ALIGNED CARDS (DASHED BOX GROUP) -->
+
+  <!-- 6. Trade Info Card (Bottom-Left) -->
+  <g transform="translate(800, 978)">
+    <rect x="0" y="0" width="430" height="228" rx="35" fill="url(#grad-dark-red)" stroke="#ff4d4d" stroke-width="2" filter="url(#glow-red)" />
+    <!-- Document Icon Circle -->
+    <circle cx="75" cy="114" r="40" fill="#020611" stroke="#ff4d4d" stroke-width="1.5" />
+    <!-- Document Path inside Circle -->
+    <g transform="translate(61, 98) scale(1.7)">
+      <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" fill="none" stroke="#ffffff" stroke-width="1.5" />
+      <path d="M14 2v6h6z" fill="#ffffff" />
+      <line x1="6" y1="12" x2="14" y2="12" stroke="#ffffff" stroke-width="1.2" />
+      <line x1="6" y1="16" x2="14" y2="16" stroke="#ffffff" stroke-width="1.2" />
+    </g>
+    <!-- Text -->
+    <text x="145" y="95" class="card-title" font-size="14" text-anchor="start">Trade Identified, analyzed-</text>
+    <text x="145" y="120" class="card-title" font-size="14" text-anchor="start">Information from</text>
+    <text x="145" y="145" class="card-subtext" font-size="14" text-anchor="start">Waya SEBI Regd. Analyst</text>
+  </g>
+
+  <!-- 7. Waya + Analyst Card (Bottom-Center) -->
+  <g transform="translate(1300, 978)">
+    <rect x="0" y="0" width="248" height="228" rx="35" fill="url(#grad-purple)" stroke="#c56cf0" stroke-width="2" filter="url(#glow-purple)" />
+    <!-- Group Icon (top center) -->
+    <g transform="translate(100, 30) scale(1.8)">
+      <circle cx="12" cy="8" r="4" fill="none" stroke="#ffffff" stroke-width="1.5" />
+      <path d="M5 20v-1a5 5 0 0 1 5-5h4a5 5 0 0 1 5 5v1" fill="none" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" />
+      <!-- Left side user -->
+      <circle cx="6" cy="11" r="3" fill="none" stroke="#ffffff" stroke-width="1.2" />
+      <!-- Right side user -->
+      <circle cx="18" cy="11" r="3" fill="none" stroke="#ffffff" stroke-width="1.2" />
+    </g>
+    <!-- Text -->
+    <text x="124" y="112" class="card-title" font-size="24" text-anchor="middle">Waya</text>
+    <text x="124" y="147" class="card-title" font-size="24" text-anchor="middle">+</text>
+    <text x="124" y="182" class="card-title" font-size="24" text-anchor="middle">Analyst</text>
+  </g>
+
+  <!-- 8. Continues Scanning Card (Bottom-Right) -->
+  <g transform="translate(1610, 978)">
+    <rect x="0" y="0" width="410" height="228" rx="35" fill="url(#grad-dark-red)" stroke="#ff4d4d" stroke-width="2" filter="url(#glow-red)" />
+    <!-- Target Icon Circle -->
+    <circle cx="75" cy="114" r="40" fill="#020611" stroke="#ff4d4d" stroke-width="1.5" />
+    <!-- Target Path inside Circle -->
+    <g transform="translate(56, 95) scale(1.6)">
+      <circle cx="12" cy="12" r="10" fill="none" stroke="#ffffff" stroke-width="1.5" />
+      <circle cx="12" cy="12" r="6" fill="none" stroke="#ffffff" stroke-width="1.2" />
+      <circle cx="12" cy="12" r="2" fill="#ffffff" />
+      <line x1="2" y1="12" x2="22" y2="12" stroke="#ffffff" stroke-width="1" />
+      <line x1="12" y1="2" x2="12" y2="22" stroke="#ffffff" stroke-width="1" />
+    </g>
+    <!-- Text -->
+    <text x="145" y="110" class="card-title" font-size="14" text-anchor="start">Continues scanning and</text>
+    <text x="145" y="135" class="card-subtext" font-size="14" text-anchor="start">analysis and identification</text>
+  </g>
+
+
+  <!-- SCANNER BOXES (EYE SCANNERS) -->
+
+  <!-- Top-Left Eye Scanner -->
+  <g transform="translate(870, 200)" class="eye-float">
+    <!-- Corner brackets -->
+    <path d="M 0,15 L 0,0 L 15,0" fill="none" stroke="#00d2ff" stroke-width="2.5" />
+    <path d="M 65,0 L 80,0 L 80,15" fill="none" stroke="#00d2ff" stroke-width="2.5" />
+    <path d="M 0,65 L 0,80 L 15,80" fill="none" stroke="#00d2ff" stroke-width="2.5" />
+    <path d="M 65,80 L 80,80 L 80,65" fill="none" stroke="#00d2ff" stroke-width="2.5" />
+    <!-- Eye SVG centered -->
+    <g transform="translate(15, 20) scale(1.6)">
+      <path d="M 10,2 C 4.5,2 0,7 0,7 C 0,7 4.5,12 10,12 C 15.5,12 20,7 20,7 C 20,7 15.5,2 10,2 Z" fill="none" stroke="#00d2ff" stroke-width="1.2" />
+      <circle cx="10" cy="7" r="3" fill="#00d2ff" class="glow-pulse" />
+    </g>
+  </g>
+
+  <!-- Bottom-Right Eye Scanner -->
+  <g transform="translate(1844, 664)" class="eye-float">
+    <!-- Corner brackets -->
+    <path d="M 0,15 L 0,0 L 15,0" fill="none" stroke="#00d2ff" stroke-width="2.5" />
+    <path d="M 65,0 L 80,0 L 80,15" fill="none" stroke="#00d2ff" stroke-width="2.5" />
+    <path d="M 0,65 L 0,80 L 15,80" fill="none" stroke="#00d2ff" stroke-width="2.5" />
+    <path d="M 65,80 L 80,80 L 80,65" fill="none" stroke="#00d2ff" stroke-width="2.5" />
+    <!-- Eye SVG centered -->
+    <g transform="translate(15, 20) scale(1.6)">
+      <path d="M 10,2 C 4.5,2 0,7 0,7 C 0,7 4.5,12 10,12 C 15.5,12 20,7 20,7 C 20,7 15.5,2 10,2 Z" fill="none" stroke="#00d2ff" stroke-width="1.2" />
+      <circle cx="10" cy="7" r="3" fill="#00d2ff" class="glow-pulse" />
+    </g>
+  </g>
+
+</svg>
