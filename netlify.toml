@@ -1,0 +1,4 @@
+[[redirects]]
+  from = "/waya"
+  to = "/"
+  status = 301
