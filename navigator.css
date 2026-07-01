@@ -1,0 +1,387 @@
+/* --- VERTICAL SCROLL PROGRESS NAVIGATOR CSS --- */
+
+/* Hide Framer Editor Bar, Container, and Floating Buttons */
+[id*="framer-editor"], 
+[class*="framer-editor"],
+#__framer-editorbar-container, 
+#__framer-editorbar-button,
+[data-framer-editorbar],
+.framer-editorbar {
+  display: none !important;
+  visibility: hidden !important;
+  opacity: 0 !important;
+  pointer-events: none !important;
+  width: 0 !important;
+  height: 0 !important;
+}
+
+/* Draggable Progress Floating Container (Frosted White Capsule) */
+.progress-ticks-container {
+  position: fixed;
+  right: 24px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2147483647 !important; /* Ensure it floats above all other elements */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  padding: 32px 0;
+  background: rgba(255, 255, 255, 0.8); /* Clean white frosted glass container */
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(0, 0, 0, 0.08); /* Clean, faint border */
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06), inset 0 1px 0 rgba(255, 255, 255, 0.6);
+  pointer-events: auto;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.progress-ticks-container:hover {
+  background: rgba(255, 255, 255, 0.9);
+}
+
+/* Vertical track line (Black progress track container) */
+.progress-track-line {
+  position: relative;
+  width: 4px; /* Slightly wider track for easier dragging */
+  height: 180px; /* Fixed elegant height for the progress bar */
+  background: rgba(0, 0, 0, 0.06); /* Faint grey/black track background */
+  border-radius: 9px;
+}
+
+/* Black progress line bar */
+.progress-track-fill {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 0%;
+  background: #000000; /* Solid black progress fill */
+  border-radius: 9px;
+  transition: height 0.15s ease-out;
+}
+
+/* Clean Ticks (Top, Middle, End Dots) */
+.tick-dot {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #ffffff; /* Clean white dot background */
+  border: 2px solid #000000; /* Solid black border outline */
+  box-sizing: border-box;
+  transition: background-color 0.25s ease, transform 0.2s ease;
+  z-index: 10;
+  cursor: pointer;
+}
+
+/* Active State: Turns solid black */
+.tick-dot.active {
+  background: #000000; /* Solid black active dot */
+}
+
+/* Positioning the three milestones */
+.tick-dot.top-dot {
+  top: 0%;
+}
+
+.tick-dot.middle-dot {
+  top: 50%;
+}
+
+.tick-dot.end-dot {
+  top: 100%;
+}
+
+/* Hover expansion */
+.tick-dot:hover {
+  transform: translate(-50%, -50%) scale(1.25);
+}
+
+/* --- ORANGE GLOWING DOT --- */
+.orange-glowing-dot {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  background: linear-gradient(135deg, #ff6b00 0%, #ff9e00 100%);
+  border-radius: 50%;
+  margin-right: 8px;
+  vertical-align: middle;
+  box-shadow: 0 0 8px rgba(255, 107, 0, 0.6), 0 0 16px rgba(255, 107, 0, 0.4);
+  animation: orange-dot-pulse 1.8s infinite ease-in-out;
+}
+
+@keyframes orange-dot-pulse {
+  0% {
+    transform: scale(0.9);
+    box-shadow: 0 0 6px rgba(255, 107, 0, 0.5), 0 0 12px rgba(255, 107, 0, 0.3);
+  }
+  50% {
+    transform: scale(1.1);
+    box-shadow: 0 0 14px rgba(255, 107, 0, 0.9), 0 0 24px rgba(255, 107, 0, 0.6);
+  }
+  100% {
+    transform: scale(0.9);
+    box-shadow: 0 0 6px rgba(255, 107, 0, 0.5), 0 0 12px rgba(255, 107, 0, 0.3);
+  }
+}
+
+/* --- THEME TOGGLE BUTTON --- */
+.theme-toggle-btn {
+  display: inline-flex !important;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  cursor: pointer;
+  color: #000000 !important;
+  background: transparent !important;
+  border: none !important;
+  outline: none !important;
+  transition: background-color 0.2s ease, transform 0.2s ease, color 0.2s ease;
+  padding: 0 !important;
+  margin: 0 4px !important;
+  vertical-align: middle;
+  flex-shrink: 0;
+}
+
+.theme-toggle-btn:hover {
+  background-color: rgba(0, 0, 0, 0.05) !important;
+  transform: scale(1.05);
+}
+
+.theme-toggle-btn svg {
+  width: 20px;
+  height: 20px;
+  stroke: currentColor;
+  fill: none;
+  stroke-width: 2;
+  transition: transform 0.3s ease;
+}
+
+/* --- DARK MODE SYSTEM OVERRIDES --- */
+body.dark-mode {
+  background-color: #0c0c0e !important;
+  background-image: none !important;
+  color: #f5f5f7 !important;
+  
+  /* Overrides for primary Framer color variables */
+  --token-afc12c4e-22b8-4d3a-a848-829879fae208: #16161a !important; /* Cards / Nav white becomes dark */
+  --token-29e0763e-941f-4cbc-9765-d7de17de9ea2: #ffffff !important; /* Black text becomes white */
+  --token-4ce8d2ea-bb2f-4ef1-9be8-c27a809cd684: #a0a0aa !important; /* Grey text becomes light grey */
+  --token-beab68cf-a5ba-473e-87ce-38371a5b394c: #0c0c0e !important; /* Page background / inner menu becomes dark */
+  
+  --token-de375d15-0f99-4672-a2a9-39daee3815cf: #16161a !important;
+  --token-947f2990-7134-4730-97f9-2a1124148f67: #16161a !important;
+  --token-aca1692e-dc7e-4f07-bd5c-c7b85c31f1e2: #16161a !important;
+  --token-aaca68e5-cac7-4790-8e5e-1f4e94fad450: rgba(255, 255, 255, 0.08) !important;
+  --token-cc8b6c72-994e-4a5b-831e-c3a336edd8d9: #2d2d34 !important;
+  --token-998bc241-698f-4791-9240-29b1fe4f85d1: #3d3d46 !important;
+  
+  --extracted-1lwpl3i: #ffffff !important;
+  --extracted-r6o4lv: #a0a0aa !important;
+  --extracted-tcooor: #ffffff !important;
+}
+
+/* Override inline background styles and borders on containers */
+body.dark-mode div[style*="background-color: rgb(255, 255, 255)"],
+body.dark-mode div[style*="background-color:rgb(255, 255, 255)"],
+body.dark-mode a[style*="background-color: rgb(255, 255, 255)"],
+body.dark-mode a[style*="background-color:rgb(255, 255, 255)"],
+body.dark-mode .framer-wAENZ {
+  background-color: #16161a !important;
+}
+
+body.dark-mode .framer-miyu90 {
+  background-color: rgba(22, 22, 26, 0.8) !important;
+  border-color: rgba(255, 255, 255, 0.08) !important;
+}
+
+body.dark-mode [data-border="true"] {
+  border-color: rgba(255, 255, 255, 0.08) !important;
+}
+
+body.dark-mode #main {
+  background-color: #0c0c0e !important;
+}
+
+/* Nav component overrides in dark mode */
+body.dark-mode nav {
+  background-color: #16161a !important;
+  border-color: rgba(255, 255, 255, 0.08) !important;
+  box-shadow: 0px 5px 25px 0px rgba(0, 0, 0, 0.6) !important;
+}
+
+body.dark-mode .framer-1a2xv6j {
+  background-color: #242429 !important;
+}
+
+/* SVG / Image filtering to turn black icons white in dark mode */
+body.dark-mode nav a div[data-framer-component-type="SVG"],
+body.dark-mode nav a .framer-1q559h7,
+body.dark-mode nav a svg {
+  filter: brightness(0) invert(1) !important;
+}
+
+body.dark-mode .theme-toggle-btn {
+  color: #ffffff !important;
+}
+
+body.dark-mode .theme-toggle-btn:hover {
+  background-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+/* Progress Sidebar Navigator in dark mode */
+body.dark-mode .progress-ticks-container {
+  background: rgba(20, 20, 20, 0.8) !important;
+  border-color: rgba(255, 255, 255, 0.1) !important;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5), inset 0 1px 0 rgba(255, 255, 255, 0.05) !important;
+}
+
+body.dark-mode .progress-track-line {
+  background: rgba(255, 255, 255, 0.1) !important;
+}
+
+body.dark-mode .progress-track-fill {
+  background: #ffffff !important;
+}
+
+body.dark-mode .tick-dot {
+  background: #16161a !important;
+  border-color: #ffffff !important;
+}
+
+body.dark-mode .tick-dot.active {
+  background: #ffffff !important;
+}
+
+/* --- DARK MODE ACCESSIBILITY & CONTRAST OVERRIDES --- */
+
+/* 1. Projects Hero/Nav buttons and View Project Card buttons */
+body.dark-mode .framer-BCxOC,
+body.dark-mode .framer-BCxOC *,
+body.dark-mode .framer-1etqhoo,
+body.dark-mode .framer-1etqhoo *,
+body.dark-mode .framer-v3Cxs,
+body.dark-mode .framer-v3Cxs * {
+  color: #ffffff !important;
+  --framer-text-color: #ffffff !important;
+}
+
+/* Ensure outline borders and subtle shadows for View Project card buttons */
+body.dark-mode .framer-1etqhoo,
+body.dark-mode .framer-v3Cxs {
+  border: 1px solid rgba(255, 255, 255, 0.15) !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3) !important;
+}
+
+/* 2. Projects Navigation Button SVGs & project page header SVG icons */
+body.dark-mode .framer-BCxOC svg,
+body.dark-mode .framer-BCxOC svg * {
+  stroke: #ffffff !important;
+}
+
+/* 3. Open to Opportunities status badge */
+body.dark-mode a.framer-lxssav div:not([data-framer-name="dot"]):not(.framer-19yexn):not(.framer-1fprkuv),
+body.dark-mode a[data-framer-name="tag"] div:not([data-framer-name="dot"]):not(.framer-19yexn):not(.framer-1fprkuv) {
+  background-color: #16161a !important;
+}
+
+body.dark-mode a.framer-lxssav,
+body.dark-mode a.framer-lxssav p,
+body.dark-mode a.framer-lxssav span,
+body.dark-mode a[data-framer-name="tag"],
+body.dark-mode a[data-framer-name="tag"] p,
+body.dark-mode a[data-framer-name="tag"] span {
+  color: #ffffff !important;
+  --framer-text-color: #ffffff !important;
+}
+
+body.dark-mode a.framer-lxssav > div,
+body.dark-mode a[data-framer-name="tag"] > div,
+body.dark-mode a.framer-lxssav .framer-1s5rs5g,
+body.dark-mode a[data-framer-name="tag"] .framer-1s5rs5g {
+  border: 1px solid rgba(255, 255, 255, 0.12) !important;
+}
+
+/* 4. Resume Button */
+body.dark-mode a.framer-emfi0v,
+body.dark-mode a.framer-emfi0v *,
+body.dark-mode a[data-framer-name="shiny cta"],
+body.dark-mode a[data-framer-name="shiny cta"] * {
+  background-color: #16161a !important;
+  color: #ffffff !important;
+  --framer-text-color: #ffffff !important;
+}
+
+body.dark-mode a.framer-emfi0v,
+body.dark-mode a[data-framer-name="shiny cta"] {
+  border: 1px solid rgba(255, 255, 255, 0.12) !important;
+  transition: background-color 0.2s ease, border-color 0.2s ease !important;
+}
+
+body.dark-mode a.framer-emfi0v:hover,
+body.dark-mode a[data-framer-name="shiny cta"]:hover {
+  background-color: #242429 !important;
+  border-color: rgba(255, 255, 255, 0.22) !important;
+}
+
+/* 5. Social Link Icon wrappers & SVGs (Header and Footer) */
+body.dark-mode a[data-framer-name="linkedin"],
+body.dark-mode a[data-framer-name="twitter"],
+body.dark-mode a[data-framer-name="instagram"],
+body.dark-mode .framer-135laf,
+body.dark-mode .framer-14ldxdt,
+body.dark-mode .framer-10we2l5,
+body.dark-mode .framer-rtllrb,
+body.dark-mode .framer-14cc9m0,
+body.dark-mode .framer-1wb0ekh {
+  background-color: #16161a !important;
+  border: 1px solid rgba(255, 255, 255, 0.08) !important;
+  transition: background-color 0.2s ease, border-color 0.2s ease !important;
+}
+
+body.dark-mode a[data-framer-name="linkedin"]:hover,
+body.dark-mode a[data-framer-name="twitter"]:hover,
+body.dark-mode a[data-framer-name="instagram"]:hover,
+body.dark-mode .framer-135laf:hover,
+body.dark-mode .framer-14ldxdt:hover,
+body.dark-mode .framer-10we2l5:hover,
+body.dark-mode .framer-rtllrb:hover,
+body.dark-mode .framer-14cc9m0:hover,
+body.dark-mode .framer-1wb0ekh:hover {
+  background-color: #242429 !important;
+  border-color: rgba(255, 255, 255, 0.18) !important;
+}
+
+body.dark-mode a[data-framer-name="linkedin"] svg,
+body.dark-mode a[data-framer-name="twitter"] svg,
+body.dark-mode a[data-framer-name="instagram"] svg,
+body.dark-mode .framer-135laf svg,
+body.dark-mode .framer-14ldxdt svg,
+body.dark-mode .framer-10we2l5 svg,
+body.dark-mode .framer-rtllrb svg,
+body.dark-mode .framer-14cc9m0 svg,
+body.dark-mode .framer-1wb0ekh svg {
+  fill: #a0a0aa !important;
+  transition: fill 0.2s ease !important;
+}
+
+body.dark-mode a[data-framer-name="linkedin"]:hover svg,
+body.dark-mode a[data-framer-name="twitter"]:hover svg,
+body.dark-mode a[data-framer-name="instagram"]:hover svg,
+body.dark-mode .framer-135laf:hover svg,
+body.dark-mode .framer-14ldxdt:hover svg,
+body.dark-mode .framer-10we2l5:hover svg,
+body.dark-mode .framer-rtllrb:hover svg,
+body.dark-mode .framer-14cc9m0:hover svg,
+body.dark-mode .framer-1wb0ekh:hover svg {
+  fill: #ffffff !important;
+}
+
